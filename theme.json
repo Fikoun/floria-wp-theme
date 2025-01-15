@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "settings": {
+    "layout": {
+      "contentSize": "960px",
+      "wideSize": "1280px"
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#D51130"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#007934"
+        },
+        {
+          "name": "Dark",
+          "slug": "dark",
+          "color": "#1C1C1E"
+        },
+        {
+          "name": "Light",
+          "slug": "light",
+          "color": "#F9FAFB"
+        },
+        {
+          "name": "Dark Background",
+          "slug": "dark-background",
+          "color": "#111827"
+        },
+        {
+          "name": "Dark Surface",
+          "slug": "dark-surface",
+          "color": "#1F2937"
+        },
+        {
+          "name": "Dark Accent",
+          "slug": "dark-accent",
+          "color": "#5A5959"
+        },{
+          "name": "Gray",
+          "slug": "gray",
+          "color": "#999695"
+        },{
+          "name": "transparent",
+          "slug": "transparent",
+          "color": "transparent"
+        }   
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "name": "Small",
+          "slug": "small",
+          "size": "0.875rem"
+        },
+        {
+          "slug": "regular",
+          "name": "Regular",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "xl",
+          "name": "XL",
+          "size": "1.25rem"
+        },
+        {
+          "slug": "xxl",
+          "name": "2XL",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "xxxl",
+          "name": "3XL",
+          "size": "1.875rem"
+        }
+      ]
+    }
+  }
+}

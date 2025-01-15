@@ -1,0 +1,70 @@
+/* DEFAULT STYLES */
+
+article > *:not(.entry-content),
+.entry-content > * {
+    @apply mx-auto max-w-content;
+}
+
+.entry-content, .block-editor-block-list__layout {
+    p, ul, ol {
+        a {
+            @apply text-blue-500 underline;
+
+            &:hover {
+                @apply no-underline;
+            }
+        }
+
+        @apply mb-8;
+    }
+
+    ul:not(.block-editor-block-variation-picker__variations) {
+        li {
+            @apply list-disc list-inside;
+        }
+    }
+
+    ol {
+        li {
+            @apply list-decimal list-inside;
+        }
+    }
+}
+
+
+/* CUSTOM RESTYLING */
+body{
+    font-family: 'Chillax', sans-serif;
+}
+
+h1 {
+    @apply text-6xl font-semibold;
+}
+
+h2 {
+    @apply text-4xl font-semibold uppercase;
+}
+
+h3 {
+    @apply text-lg font-semibold;
+}
+
+.w-logo {
+    @apply h-24 scale-150;
+}
+
+body {
+    line-height: 1.2em;
+}
+
+.customSMALL {
+    width: 40%;
+}
+.customBIG {
+    width: 60%;
+}
+
+.customPAD {
+    padding: 80px;
+}
+

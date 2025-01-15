@@ -1,0 +1,78 @@
+/**
+* @license
+*
+* Font Family: Chillax
+* Designed by: Manushi Parikh
+* URL: https://www.fontshare.com/fonts/chillax
+* © 2025 Indian Type Foundry
+*
+* Chillax Extralight 
+* Chillax Light 
+* Chillax Regular 
+* Chillax Medium 
+* Chillax Semibold 
+* Chillax Bold 
+* Chillax Variable (Variable font)
+*
+*/
+
+@font-face {
+    font-family: 'Chillax';
+    src: url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Extralight.woff2') format('woff2'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Extralight.woff') format('woff'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Chillax';
+    src: url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Light.woff2') format('woff2'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Light.woff') format('woff'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Chillax';
+    src: url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Regular.woff2') format('woff2'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Regular.woff') format('woff'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Chillax';
+    src: url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Medium.woff2') format('woff2'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Medium.woff') format('woff'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Chillax';
+    src: url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Semibold.woff2') format('woff2'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Semibold.woff') format('woff'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Chillax';
+    src: url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Bold.woff2') format('woff2'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Bold.woff') format('woff'),
+         url('/wp-content/themes/floria/assets/fonts/Chillax_Complete/fonts/Chillax-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
