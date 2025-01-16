@@ -62,14 +62,7 @@ body {
     line-height: 1.2em;
 }
 
-.customSMALL {
-    width: 40%;
-}
-.customBIG {
-    width: 60%;
-}
-
-.customPAD {
-    padding: 80px;
+.rounded-4xl{
+    border-radius: 3rem;
 }
 

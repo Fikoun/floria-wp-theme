@@ -4,12 +4,31 @@
 }
 
 /* Components: Buttons */
-
 .btn-primary {
-    @apply bg-primary font-medium text-white px-8 py-4 hover:bg-opacity-90 transition-all;
+    @apply bg-primary font-medium text-white px-9 py-5 uppercase hover:bg-opacity-90 transition-all;
 }
 
 .btn-link {
     @apply text-sm xl:text-lg font-medium m-0 py-5 lg:py-0 lg:mx-5  hover:text-primary-light border-b-2 border-transparent hover:border-primary-light uppercase;
 }
 
+.heading-padded{
+    @apply text-3xl mb-10 uppercase;
+}
+
+/* FULL GRID OF 4 */
+.grid-4 {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-20 text-gray text-center;
+  
+    & .icon-card {
+      @apply flex flex-col items-center justify-center p-6 rounded shadow;
+  
+      & img {
+        @apply h-14 w-14 mb-5;
+      }
+  
+      & .icon-title {
+        @apply text-2xl font-semibold mb-2 max-w-48 uppercase leading-tight;
+      }
+    }
+  }
