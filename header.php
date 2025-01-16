@@ -50,10 +50,10 @@
 					wp_nav_menu(
 						array(
 							'container_id' => 'primary-menu',
-							'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
+							'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block nav-responsive',
 							'menu_class' => 'lg:flex lg:-mx-4',
 							'theme_location' => 'primary',
-							'li_class' => 'lg:mx-4 hover:text-primary border-b-2 border-transparent hover:border-primary',
+							'li_class' => 'btn-link ',
 							'fallback_cb' => false,
 						)
 					);

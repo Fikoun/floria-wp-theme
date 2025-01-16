@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 
-<div class="hero flex h-[600px]">
+<div class="hero flex flex-wrap h-[800px]">
 	<!-- Left -->
-	<div class="w-6/12 bg-cover bg-center relative group transition-all duration-300"
+	<div class="pt-10 w-full md:pt-0 md:w-6/12 bg-cover bg-center relative group transition-all"
 		style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero-1.png');">
-		<div class="absolute inset-0 bg-black bg-opacity-60 group-hover:bg-opacity-40 transition-opacity duration-300">
+		<div class="absolute inset-0 bg-black bg-opacity-60 group-hover:bg-opacity-15 transition-all ">
 		</div>
 		<div class="relative z-10 flex flex-col items-center justify-center h-full text-white px-8">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/flower.svg"
@@ -19,7 +19,7 @@
 	</div>
 
 	<!-- Right -->
-	<div class="w-6/12 bg-cover bg-center relative group transition-all duration-300"
+	<div class="w-full md:w-6/12 bg-cover bg-center relative group transition-all duration-300 md:mt-0"
 		style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero-2.png');">
 		<div class="absolute inset-0 bg-black bg-opacity-60 group-hover:bg-opacity-40 transition-opacity duration-300">
 		</div>

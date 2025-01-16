@@ -37,12 +37,17 @@ body{
     font-family: 'Chillax', sans-serif;
 }
 
+p, li, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
     @apply text-6xl font-semibold;
 }
 
 h2 {
-    @apply text-4xl font-semibold uppercase;
+    @apply font-semibold uppercase py-4;
+    font-size: 55px;
 }
 
 h3 {

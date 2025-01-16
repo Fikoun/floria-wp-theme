@@ -563,6 +563,13 @@ video {
     font-display: swap;
     font-style: normal;
   }
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/wp-content/themes/floria/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+  }
 .container{
     width: 100%;
     padding-right: 1rem;
@@ -608,14 +615,38 @@ video {
         max-width: 1440px;
     }
 }
+.nav-responsive{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 80px;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.9;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+@media (min-width: 960px){
+
+    .nav-responsive{
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        padding: 0px;
+    }
+}
 /* Components: Buttons */
 .btn-primary{
     --tw-bg-opacity: 1;
     background-color: rgb(213 17 48 / var(--tw-bg-opacity));
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
     transition-property: all;
@@ -624,6 +655,42 @@ video {
 }
 .btn-primary:hover{
     --tw-bg-opacity: 0.9;
+}
+.btn-link{
+    margin: 0px;
+    border-bottom-width: 2px;
+    border-color: transparent;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.btn-link:hover{
+    --tw-border-opacity: 1;
+    border-color: rgb(237 29 60 / var(--tw-border-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(237 29 60 / var(--tw-text-opacity));
+}
+@media (min-width: 960px){
+
+    .btn-link{
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+@media (min-width: 1280px){
+
+    .btn-link{
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
+.fixed{
+    position: fixed;
 }
 .absolute{
     position: absolute;
@@ -634,6 +701,9 @@ video {
 .inset-0{
     inset: 0px;
 }
+.bottom-0{
+    bottom: 0px;
+}
 .left-0{
     left: 0px;
 }
@@ -643,11 +713,17 @@ video {
 .top-0{
     top: 0px;
 }
+.top-\[80px\]{
+    top: 80px;
+}
 .z-10{
     z-index: 10;
 }
 .z-50{
     z-index: 50;
+}
+.m-0{
+    margin: 0px;
 }
 .m-8{
     margin: 2rem;
@@ -677,9 +753,6 @@ video {
 .mb-12{
     margin-bottom: 3rem;
 }
-.mb-2{
-    margin-bottom: 0.5rem;
-}
 .mb-4{
     margin-bottom: 1rem;
 }
@@ -704,17 +777,11 @@ video {
 .flex{
     display: flex;
 }
-.grid{
-    display: grid;
-}
 .hidden{
     display: none;
 }
 .h-1{
     height: 0.25rem;
-}
-.h-12{
-    height: 3rem;
 }
 .h-16{
     height: 4rem;
@@ -728,20 +795,14 @@ video {
 .h-8{
     height: 2rem;
 }
-.h-\[600px\]{
-    height: 600px;
+.h-\[800px\]{
+    height: 800px;
 }
 .h-full{
     height: 100%;
 }
 .min-h-screen{
     min-height: 100vh;
-}
-.w-1\/2{
-    width: 50%;
-}
-.w-12{
-    width: 3rem;
 }
 .w-16{
     width: 4rem;
@@ -751,12 +812,6 @@ video {
 }
 .w-full{
     width: 100%;
-}
-.w-6\/12{
-    width: 50%;
-}
-.max-w-32{
-    max-width: 8rem;
 }
 .max-w-lg{
     max-width: 32rem;
@@ -779,9 +834,6 @@ video {
 .list-disc{
     list-style-type: disc;
 }
-.grid-cols-1{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-}
 .flex-col{
     flex-direction: column;
 }
@@ -796,9 +848,6 @@ video {
 }
 .justify-between{
     justify-content: space-between;
-}
-.gap-4{
-    gap: 1rem;
 }
 .rounded{
     border-radius: 0.25rem;
@@ -863,9 +912,6 @@ video {
 .p-6{
     padding: 1.5rem;
 }
-.p-8{
-    padding: 2rem;
-}
 .px-3{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -882,6 +928,10 @@ video {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+.px-\[60px\]{
+    padding-left: 60px;
+    padding-right: 60px;
+}
 .py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -894,9 +944,9 @@ video {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-.py-3{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+.py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .py-5{
     padding-top: 1.25rem;
@@ -905,6 +955,13 @@ video {
 .py-9{
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
+}
+.py-\[34px\]{
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+.pt-10{
+    padding-top: 2.5rem;
 }
 .text-center{
     text-align: center;
@@ -937,9 +994,6 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
 }
-.text-xl{
-    font-size: 1.25rem;
-}
 .font-bold{
     font-weight: 700;
 }
@@ -948,6 +1002,9 @@ video {
 }
 .font-light{
     font-weight: 300;
+}
+.font-medium{
+    font-weight: 500;
 }
 .font-semibold{
     font-weight: 600;
@@ -964,10 +1021,6 @@ video {
 .text-blue-500{
     --tw-text-opacity: 1;
     color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-.text-gray{
-    --tw-text-opacity: 1;
-    color: rgb(153 150 149 / var(--tw-text-opacity));
 }
 .text-light{
     --tw-text-opacity: 1;
@@ -987,11 +1040,6 @@ video {
 .antialiased{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-.shadow{
-    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .transition-all{
     transition-property: all;
@@ -1088,16 +1136,20 @@ article > *:not(.entry-content),
 body{
     font-family: 'Chillax', sans-serif;
 }
+p, li, a {
+    font-family: 'Montserrat', sans-serif;
+}
 h1{
     font-size: 3.75rem;
     line-height: 1;
     font-weight: 600;
 }
 h2{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: 55px;
 }
 h3{
     font-size: 1.125rem;
@@ -1122,16 +1174,19 @@ body {
 .customPAD {
     padding: 80px;
 }
-.hover\:border-primary:hover{
+.hover\:border-primary-light:hover{
     --tw-border-opacity: 1;
-    border-color: rgb(213 17 48 / var(--tw-border-opacity));
+    border-color: rgb(237 29 60 / var(--tw-border-opacity));
 }
 .hover\:bg-opacity-90:hover{
     --tw-bg-opacity: 0.9;
 }
-.hover\:text-primary:hover{
+.hover\:text-primary-light:hover{
     --tw-text-opacity: 1;
-    color: rgb(213 17 48 / var(--tw-text-opacity));
+    color: rgb(237 29 60 / var(--tw-text-opacity));
+}
+.group:hover .group-hover\:bg-opacity-15{
+    --tw-bg-opacity: 0.15;
 }
 .group:hover .group-hover\:bg-opacity-40{
     --tw-bg-opacity: 0.4;
@@ -1143,6 +1198,10 @@ body {
         margin-bottom: 1.5rem;
     }
 
+    .md\:mt-0{
+        margin-top: 0px;
+    }
+
     .md\:flex{
         display: flex;
     }
@@ -1151,8 +1210,12 @@ body {
         width: 50%;
     }
 
-    .md\:grid-cols-2{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .md\:w-6\/12{
+        width: 50%;
+    }
+
+    .md\:pt-0{
+        padding-top: 0px;
     }
 
     .md\:text-3xl{
@@ -1162,14 +1225,27 @@ body {
 }
 @media (min-width: 960px){
 
+    .lg\:relative{
+        position: relative;
+    }
+
+    .lg\:inset-x-0{
+        left: 0px;
+        right: 0px;
+    }
+
+    .lg\:top-0{
+        top: 0px;
+    }
+
     .lg\:-mx-4{
         margin-left: -1rem;
         margin-right: -1rem;
     }
 
-    .lg\:mx-4{
-        margin-left: 1rem;
-        margin-right: 1rem;
+    .lg\:mx-5{
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
     }
 
     .lg\:mt-0{
@@ -1188,10 +1264,6 @@ body {
         display: none;
     }
 
-    .lg\:grid-cols-4{
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
     .lg\:items-center{
         align-items: center;
     }
@@ -1208,9 +1280,21 @@ body {
         padding: 0px;
     }
 
+    .lg\:py-0{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
     .lg\:text-5xl{
         font-size: 3rem;
         line-height: 1;
+    }
+}
+@media (min-width: 1280px){
+
+    .xl\:text-lg{
+        font-size: 1.125rem;
+        line-height: 1.75rem;
     }
 }
 
