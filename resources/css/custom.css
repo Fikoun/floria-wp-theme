@@ -42,20 +42,23 @@ p, li, a {
 }
 
 h1 {
-    @apply text-6xl font-semibold;
+    @apply text-5xl md:text-6xl font-semibold uppercase;
 }
 
 h2 {
-    @apply font-semibold uppercase py-4;
-    font-size: 55px;
+    @apply text-3xl md:text-4xl font-semibold uppercase;
 }
 
 h3 {
-    @apply text-lg font-semibold;
+    @apply text-xl md:text-2xl font-semibold uppercase;
+}
+
+h4 {
+    @apply text-xl md:text-2xl font-semibold uppercase;
 }
 
 .w-logo {
-    @apply h-24 scale-150;
+    @apply w-32;
 }
 
 body {
@@ -66,3 +69,30 @@ body {
     border-radius: 3rem;
 }
 
+
+.bigass-shadow{
+    box-shadow: -9px 0 58px 42px rgba(0, 0, 0, 0.56);   
+}
+
+.slick-slide{
+    width: 20%;
+}
+
+.slick-slide:not(.slick-center) {
+
+    filter: grayscale(100%);
+}
+
+
+@media (min-width: $breakpoint--global-header) {
+	.wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: none !important;
+	}
+	.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+		display: block !important;
+		width: 100%;
+		position: relative;
+		z-index: auto;
+		background-color: inherit;
+	}
+}

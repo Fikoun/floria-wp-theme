@@ -25,7 +25,7 @@
         {
           "name": "Dark",
           "slug": "dark",
-          "color": "#1C1C1E"
+          "color": "#222223"
         },
         {
           "name": "Light",
@@ -35,7 +35,7 @@
         {
           "name": "Dark Background",
           "slug": "dark-background",
-          "color": "#111827"
+          "color": "#1C1C1E"
         },
         {
           "name": "Dark Surface",
@@ -51,6 +51,11 @@
           "slug": "gray",
           "color": "#999695"
         },{
+          "name": "Border Color",
+          "slug": "border-color",
+          "color": "#99969566"
+        },
+        {
           "name": "transparent",
           "slug": "transparent",
           "color": "transparent"

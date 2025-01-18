@@ -12,7 +12,7 @@ window.addEventListener('load', function () {
                   e.preventDefault();
                   const targetElement = document.querySelector(this.getAttribute('href'));
                   const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                  
+
                   window.scrollTo({
                         top: offsetTop,
                         behavior: 'smooth'
@@ -41,5 +41,27 @@ window.addEventListener('load', function () {
 
                   requestAnimationFrame(animation);
             });
+      });
+
+      jQuery('#floria-logos-slider').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 3,
+            arrows: false,
+            dots: true,
+            centerMode: true,
+            appendDots: jQuery('#floria-logos-dots'),
+            responsive: [
+                  {
+                        breakpoint: 1024,
+                        settings: {
+                              slidesToShow: 2,
+                              slidesToScroll: 2,
+                        }
+                  }
+                  // You can unslick at a given breakpoint now by adding:
+                  // settings: "unslick"
+                  // instead of a settings object
+            ]
       });
 });
