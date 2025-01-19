@@ -1,12 +1,16 @@
 /* DEFAULT STYLES */
 
-article > *:not(.entry-content),
-.entry-content > * {
+article>*:not(.entry-content),
+.entry-content>* {
     @apply mx-auto max-w-content;
 }
 
-.entry-content, .block-editor-block-list__layout {
-    p, ul, ol {
+.entry-content,
+.block-editor-block-list__layout {
+
+    p,
+    ul,
+    ol {
         a {
             @apply text-blue-500 underline;
 
@@ -33,29 +37,34 @@ article > *:not(.entry-content),
 
 
 /* CUSTOM RESTYLING */
-body{
+
+body {
     font-family: 'Chillax', sans-serif;
 }
 
-p, li, a {
+p,
+li,
+a {
     font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-    @apply text-5xl md:text-6xl font-semibold uppercase;
+    @apply text-white text-4xl md:text-5xl font-semibold uppercase;
 }
 
 h2 {
-    @apply text-3xl md:text-4xl font-semibold uppercase;
+    @apply text-white text-3xl md:text-4xl font-semibold uppercase;
 }
 
 h3 {
-    @apply text-xl md:text-2xl font-semibold uppercase;
+    @apply text-white text-xl md:text-2xl font-semibold uppercase;
 }
 
 h4 {
-    @apply text-xl md:text-2xl font-semibold uppercase;
+    @apply text-white text-lg md:text-xl font-semibold uppercase;
 }
+
+/* MINOR CUSTOMIZATION */
 
 .w-logo {
     @apply w-32;
@@ -65,16 +74,36 @@ body {
     line-height: 1.2em;
 }
 
-.rounded-4xl{
+.current-menu-item {
+    @apply text-primary border-b-2 border-primary;
+}
+
+.rounded-4xl {
     border-radius: 3rem;
 }
-
-
-.bigass-shadow{
-    box-shadow: -9px 0 58px 42px rgba(0, 0, 0, 0.56);   
+.rounded-4xl-top {
+    border-radius: 3rem 3rem 0 0;
 }
 
-.slick-slide{
+.leaf-1 {
+    @apply absolute -top-24 -left-20 w-56 md:-top-24 md:-left-20 md:w-60;
+}
+
+.leaf-2 {
+    @apply absolute -top-24 -right-16 w-40 md:-top-24 md:right-auto md:left-1/2 md:w-40;
+}
+
+.leaf-3 {
+    @apply absolute -right-5 -bottom-12 w-24 md:right-24 md:-bottom-16 md:w-28;
+}
+
+.bigass-shadow {
+    box-shadow: -9px 0 58px 42px rgba(0, 0, 0, 0.56);
+}
+
+
+/* SLIDER */
+.slick-slide {
     width: 20%;
 }
 
@@ -84,15 +113,49 @@ body {
 }
 
 
-@media (min-width: $breakpoint--global-header) {
-	.wp-block-navigation__responsive-container-open:not(.always-shown) {
-		display: none !important;
-	}
-	.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
-		display: block !important;
-		width: 100%;
-		position: relative;
-		z-index: auto;
-		background-color: inherit;
-	}
+/* SCROLLBAR STYLING */
+/* Webkit (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f1eb00;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #767676;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ababab;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #767676 #f5f1eb00;
+}
+
+/* Edge and IE */
+* {
+    -ms-overflow-style: auto;
+}
+
+*::-ms-scrollbar {
+    width: 12px;
+}
+
+*::-ms-scrollbar-track {
+    background: #f5f1eb00;
+}
+
+*::-ms-scrollbar-thumb {
+    background-color: #767676;
+}
+
+*::-ms-scrollbar-thumb:hover {
+    background: #ababab;
 }

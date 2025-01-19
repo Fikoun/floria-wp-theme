@@ -9,8 +9,30 @@
 
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
-
-	<?php wp_head(); ?>
+	<?php wp_head(); 
+	function enqueue_swiper_assets() {
+    wp_enqueue_style('swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css');
+    wp_enqueue_script('swiper-script', 'https://unpkg.com/swiper/swiper-bundle.min.js', [], null, true);
+    wp_add_inline_script('swiper-script', "
+        document.addEventListener('DOMContentLoaded', function() {
+            new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    ");
+}
+add_action('wp_enqueue_scripts', 'enqueue_swiper_assets');
+?>
 </head>
 
 <body <?php body_class('bg-dark text-light antialiased'); ?>>
@@ -34,8 +56,13 @@
 					</div>
 
 
-					<div class="order-2 lg:order-3 px-7">
-						<div class="relative inline-block text-left">
+					<div class="order-2 lg:order-3 px-7 flex items-center justify-end lg:-translate-y-1">
+						<div class="pr-3 lg:mr-0">
+							<a href="https://www.facebook.com" target="_blank" rel="noopener">
+								<img src="<?= floria_images('icons/fb.svg') ?>" alt="facebook" class="w-7 lg:w-5">
+							</a>
+						</div>
+						<div class="relative inline-block text-left translate-y-0.5">
 							<select
 								class="block w-14 appearance-none bg-transparent btn-link hover:border-0  px-0 py-2 pr-8">
 								<option class="bg-dark">EN</option>
@@ -90,7 +117,7 @@
 
 
 
-		<div id="content" class="site-content flex-grow  overflow-x-hidden">
+		<div id="content" class="site-content flex-grow">
 
 			<?php do_action('tailpress_content_start'); ?>
 

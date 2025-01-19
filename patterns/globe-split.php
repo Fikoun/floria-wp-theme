@@ -15,11 +15,10 @@ defined('ABSPATH') || exit;
 
 
 <!-- wp:html -->
-<div class="container-section">
-
+<div class="overflow-hidden">
 
 	<!-- GLOBE SPLIT -->
-	<section id="globe">
+	<section class="container-section">
 		<h2 class="heading-mid mt-28">Pěstování s dotykem luxusu</h2>
 
 		<div class="grid grid-cols-1 lg:grid-cols-2 mt-4">

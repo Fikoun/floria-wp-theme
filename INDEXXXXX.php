@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
 <!-- NAV SPLIT IMAGE -->
 <div class="hero flex flex-wrap h-screen border-b-2 lg:border-none border-gray mb-10">
 	<!-- Left -->
@@ -259,7 +260,7 @@
 					<a href="#">
 						<img src="<?= floria_images('/violets.png') ?>" alt="Article 1" class="w-full max-h-80">
 					</a>
-					<div class="text-smmt-5">12/9/2023</div>
+					<div class="text-sm mt-5">12/9/2023</div>
 				</div>
 				<h2 class="article-title text-2xl font-bold my-5">
 					<a href="#" class="hover:underline">
@@ -282,14 +283,14 @@
 					<a href="#">
 						<img src="<?= floria_images('/violets.png') ?>" alt="Article 2" class="w-full h-auto max-h-80">
 					</a>
-					<div class="text-sm text-gray-500 mt-5">12/9/2023</div>
+					<div class="text-sm mt-5">12/9/2023</div>
 				</div>
 				<h2 class="article-title text-2xl font-bold my-5">
 					<a href="#" class="hover:underline">
 						Aby mráz okrasným dřevinám neuškodil
 					</a>
 				</h2>
-				<div class="article-excerpt text-gray-700">
+				<div class="article-excerpt">
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum
 						suscipit, sollicitudin et, dolor. Integer imperdiet lectus quis justo. Vestibulum erat nulla,
 						ullamcorper nec, rutrum non, nonummy ac, erat. Etiam quis quam.</p>
@@ -308,8 +309,26 @@
 		</div>
 	</section>
 
+	<div class="container-section">
 
-
+		<div class="bg-secondary-light rounded-lg">
+			<div class="container mx-auto px-4 py-8">
+				<div class="grid grid-cols-3 items-center">
+					<div class="col-span-1">
+						<h2 class="text-2xl font-bold mb-4">Your Heading Here</h2>
+						<p class="mb-4">Your compelling text goes here. Make it engaging and informative.</p>
+						<button class="btn-primary bg-secondary text-white px-6 py-2 rounded hover:bg-primary-dark transition-colors">
+							Call to Action
+						</button>
+					</div>
+					<div class="col-span-2 flex justify-end">
+						<img src="<?php echo get_template_directory_uri(); ?>/icons/megazahrady.svg" alt="Logo" class="max-w-xs">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
 
 	<?php if (have_posts()): ?>
 		<?php

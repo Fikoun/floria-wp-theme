@@ -20,8 +20,14 @@
         {
           "name": "Secondary",
           "slug": "secondary",
-          "color": "#007934"
+          "color": "#006E31"
         },
+        {
+          "name": "Secondary light",
+          "slug": "secondary-light",
+          "color": "#A6CE39"
+        },
+       
         {
           "name": "Dark",
           "slug": "dark",
@@ -49,7 +55,7 @@
         },{
           "name": "Gray",
           "slug": "gray",
-          "color": "#999695"
+          "color": "#616161"
         },{
           "name": "Border Color",
           "slug": "border-color",
