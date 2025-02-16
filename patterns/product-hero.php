@@ -20,7 +20,7 @@ defined('ABSPATH') || exit;
 	<div class="flex flex-wrap items-stretch -mx-4">
 
 		<div class="w-full lg:w-1/2 px-4 lg:mb-0">
-			<div class="relative flex flex-wrap items-center justify-center py-20 mt-5">
+			<div class="relative flex flex-wrap items-center justify-center py-20 mt-24 lg:mt-5 ">
 				<div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
 					<div class="w-40 h-40 bg-gray-200 rounded-full product-gradient"></div>
 				</div>

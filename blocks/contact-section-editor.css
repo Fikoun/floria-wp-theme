@@ -1,0 +1,66 @@
+.contact-section-preview {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.contact-info {
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.preview-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.preview-contact {
+    margin-bottom: 20px;
+}
+
+.preview-phone,
+.preview-email {
+    margin-bottom: 15px;
+}
+
+.preview-phone p:first-child,
+.preview-email p:first-child {
+    color: #0073aa;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.45em;
+    margin-bottom: 5px;
+}
+
+.preview-phone p:last-child,
+.preview-email p:last-child {
+    font-size: 20px;
+}
+
+.preview-address,
+.preview-company {
+    margin-bottom: 15px;
+}
+
+.preview-address pre,
+.preview-company pre {
+    font-family: inherit;
+    white-space: pre-wrap;
+}
+
+.preview-map {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@media (max-width: 782px) {
+    .contact-section-preview {
+        grid-template-columns: 1fr;
+    }
+}

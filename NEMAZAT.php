@@ -7,7 +7,7 @@
 	<div class="group hero-section w-full md:w-6/12 bg-cover bg-center pt-10 md:pt-0"
 		style="background-image: url('<?= floria_images('/hero-1.png') ?>')">
 		<div class="hero-section-overlay"></div>
-		<div class="hero-section-content">
+		<div class="hero-section-content text-center inline-block">
 			<img src="<?= floria_images('/icons/flower.svg') ?>" class="hero-section-icon hero-section-icon-hover"
 				alt="Flower icon">
 			<img src="<?= floria_images('/icons/flower-gray.svg') ?>"
@@ -65,7 +65,7 @@
 
 
 	<!-- CARD OF TEXTS -->
-	<div class="border border-dark-accent p-10 lg:p-20 pb-16 rounded-2xl lg:rounded-4xl">
+	<div class="border border-dark-accent font-extralight p-10 lg:p-20 pb-16 rounded-2xl lg:rounded-4xl">
 		<!-- SECTION -->
 		<h2 class="mb-16 text-center">FLORIA PREMIUM</h2>
 
@@ -295,7 +295,7 @@
 						suscipit, sollicitudin et, dolor. Integer imperdiet lectus quis justo. Vestibulum erat nulla,
 						ullamcorper nec, rutrum non, nonummy ac, erat. Etiam quis quam.</p>
 				</div>
-				<a href="#" class="btn-line mt-10 inline-block">
+				<a href="#" class="btn-line mt-10 inline-block px-24">
 					Zobrazit více
 				</a>
 			</div>
@@ -309,7 +309,9 @@
 		</div>
 	</section>
 
-	<div class="container-section">
+	<div class="container-section sub-menu absolute hidden group-hover:block bg-white text-black px-4 py-2 shadow-lg z-50 
+						hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block nav-responsive
+						btn-link relative group">
 
 		<div class="bg-secondary-light rounded-lg">
 			<div class="container mx-auto px-4 py-8">

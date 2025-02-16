@@ -1,0 +1,44 @@
+.hero-section-editor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hero-section-editor .preview-left,
+.hero-section-editor .preview-right {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.editor-section {
+    margin-bottom: 20px;
+}
+
+.editor-section h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.editor-section .button {
+    margin-bottom: 10px;
+}
+
+.editor-section .hero-section-title {
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.components-base-control {
+    margin-bottom: 20px;
+}

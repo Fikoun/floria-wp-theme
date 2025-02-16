@@ -1,0 +1,150 @@
+/* Hlavní kontejner */
+.programs-section-settings {
+    padding: 24px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+/* Přepínače sekcí */
+.components-toggle-control {
+    margin-bottom: 16px;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.components-toggle-control .components-base-control__field {
+    margin-bottom: 0;
+}
+
+.components-toggle-control .components-toggle-control__label {
+    font-weight: 500;
+}
+
+/* Nastavení sekce */
+.section-settings {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+/* Upload ikon */
+.icon-upload {
+    margin-bottom: 20px;
+}
+
+.icon-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+.icon-preview {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+/* Tlačítka */
+.button-item {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+}
+
+.button-controls {
+    display: grid;
+    gap: 16px;
+}
+
+.button-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Preview */
+.programs-section-preview {
+    margin-top: 24px;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.preview-icon {
+    display: block;
+    margin: 0 auto 16px;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.buttons-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+    justify-content: center;
+}
+
+.preview-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Barevné varianty */
+.bg-primary {
+    background: #dc2626;
+}
+
+.bg-secondary {
+    background: #16a34a;
+}
+
+/* Tlačítka akce */
+.components-button.is-destructive {
+    background: #fee2e2 !important;
+    color: #dc2626 !important;
+    border: none !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+}
+
+.components-button.is-destructive:hover {
+    background: #fecaca !important;
+    color: #b91c1c !important;
+}
+
+
+
+/* Inputy */
+.components-text-control__input {
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+}
+
+/* Nadpisy */
+.section-settings h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 16px;
+}

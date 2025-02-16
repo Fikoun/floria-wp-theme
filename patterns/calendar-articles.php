@@ -13,6 +13,21 @@ $args = array(
 );
 
 $latest_posts = new WP_Query($args);
+
+$months_cs = array(
+	'January' => 'Leden',
+	'February' => 'Únor',
+	'March' => 'Březen',
+	'April' => 'Duben',
+	'May' => 'Květen',
+	'June' => 'Červen',
+	'July' => 'Červenec',
+	'August' => 'Srpen',
+	'September' => 'Září',
+	'October' => 'Říjen',
+	'November' => 'Listopad',
+	'December' => 'Prosinec'
+);
 ?>
 
 
@@ -33,7 +48,11 @@ $latest_posts = new WP_Query($args);
 									<?php the_post_thumbnail('large', array('class' => 'w-full max-h-80')); ?>
 								<?php endif; ?>
 							</a>
-							<div class="text-sm mt-5"><?php echo get_the_date('d/m/Y'); ?></div>
+							<div class="text-sm mt-5">
+								<a href="/floria-radi" class="px-4 py-1 rounded-full bg-primary text-white">
+								<?= $months_cs[date('F', strtotime(get_the_date()))]; ?>
+								</a>
+							</div>
 						</div>
 						<h2 class="article-title text-2xl font-bold my-5">
 							<a href="<?php the_permalink(); ?>" class="hover:underline">

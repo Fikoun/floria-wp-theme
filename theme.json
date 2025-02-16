@@ -62,6 +62,11 @@
           "color": "#99969566"
         },
         {
+          "name": "Silver",
+          "slug": "silver",
+          "color": "#E8E8E8"
+        },
+        {
           "name": "transparent",
           "slug": "transparent",
           "color": "transparent"

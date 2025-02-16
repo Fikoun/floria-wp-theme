@@ -57,7 +57,7 @@ h2 {
 }
 
 h3 {
-    @apply text-white text-xl md:text-2xl font-semibold uppercase;
+    @apply text-white text-lg md:text-2xl font-semibold uppercase;
 }
 
 h4 {
@@ -67,20 +67,48 @@ h4 {
 /* MINOR CUSTOMIZATION */
 
 .w-logo {
-    @apply w-32;
+    @apply w-36 text-6xl;
 }
 
 body {
     line-height: 1.2em;
 }
 
-.current-menu-item {
-    @apply text-primary border-b-2 border-primary;
+/* MENU NAVIGATION */
+.menu-item {
+    @apply text-xs md:text-sm xl:text-base font-normal m-0 py-5 lg:py-0 mx-3 xl:mx-5 hover:text-primary-light uppercase;
+    span{
+       @apply inline-block pb-1 m-auto border-b-2 border-transparent hover:border-primary-light text-nowrap;
+    }
 }
+
+.current-menu-item {
+    span{
+        @apply text-primary border-b-2 border-primary;
+     }
+}
+
+
+.floria-sub {
+    @apply sub-menu left-0 right-0 lg:left-auto lg:right-auto rounded-3xl
+        absolute hidden group-hover:block
+        bg-dark text-light border border-primary px-1 pt-4 pb-2 shadow-lg top-5 z-50;
+
+    a span{
+        @apply leading-snug pb-3;
+
+    }
+
+    .menu-item{
+        @apply text-base md:text-sm m-0 p-0 !important;
+    }
+}
+
 
 .rounded-4xl {
     border-radius: 3rem;
 }
+
 .rounded-4xl-top {
     border-radius: 3rem 3rem 0 0;
 }

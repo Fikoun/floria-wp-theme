@@ -61,9 +61,9 @@ defined('ABSPATH') || exit;
 
 
         <!-- SECTION -->
-        <h2 class="text-3xl text-center max-w-2xl mx-auto mb-14 py-10">
+        <h3 class="text-center max-w-2xl mx-auto mb-14 py-10">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et
-        </h2>
+        </h3>
 
         <div class="flex flex-wrap xl:flex-nowrap justify-center gap-x-20 mb-14">
             <div class="w-full xl:w-5/12 text-center flex justify-center py-2">

@@ -1,0 +1,95 @@
+.eshop-banner-preview {
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.banner-text {
+    text-align: left;
+}
+
+.banner-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.banner-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border-radius: 4px;
+}
+
+.banner-logo {
+    text-align: right;
+}
+
+.banner-logo img {
+    max-width: 200px;
+    display: inline-block;
+}
+
+.banner-leaves {
+    position: relative;
+}
+
+.leaf-preview {
+    position: absolute;
+    max-width: 100px;
+}
+
+.leaf-preview.leaf-1 {
+    top: -50px;
+    left: 0;
+}
+
+.leaf-preview.leaf-2 {
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leaf-preview.leaf-3 {
+    top: -50px;
+    right: 0;
+}
+
+.editor-image-controls {
+    margin: 15px 0;
+}
+
+.editor-image-controls p {
+    margin-bottom: 5px;
+}
+
+.editor-image-controls .button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+@media (max-width: 782px) {
+    .banner-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .banner-text {
+        text-align: center;
+    }
+
+    .banner-logo {
+        text-align: center;
+    }
+}

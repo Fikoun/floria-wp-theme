@@ -1,0 +1,98 @@
+.product-hero-editor {
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.text-inputs {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.input-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1e1e1e;
+}
+
+.product-title-input {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    margin-bottom: 5px;
+}
+
+.product-description-input {
+    min-height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.preview-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.main-image {
+    flex: 0 0 300px;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.gallery-preview {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.gallery-uploads {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.gallery-uploads h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.gallery-uploads .button {
+    margin: 5px;
+}
+
+.editor-section > * {
+    margin-bottom: 15px;
+}
+
+/* Specifické styly pro tlačítka */
+.components-button {
+    margin: 5px;
+}

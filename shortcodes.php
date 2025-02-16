@@ -20,5 +20,6 @@ make_new_shortcode('product-list');
 make_new_shortcode('four-articles');
 make_new_shortcode('search-map');
 make_new_shortcode('calendar-articles');
-//make_new_shortcode('single-hero');
+make_new_shortcode('month-carousel');
 
+//make_new_shortcode('single-hero');

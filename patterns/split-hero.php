@@ -22,27 +22,27 @@ defined('ABSPATH') || exit;
 		style="background-image: url('<?= floria_images('/hero-1.png') ?>')">
 		<div class="hero-section-overlay"></div>
 		<div class="hero-section-content scale-75 lg:scale-100">
-			<img src="<?= floria_images('/icons/grass.svg') ?>" class="hero-section-icon hero-section-icon-hover"
+			<img src="<?= floria_images('/icons/flower.svg') ?>" class="hero-section-icon hero-section-icon-hover"
 				alt="Grass icon">
-			<img src="<?= floria_images('/icons/grass-gray.svg') ?>" class="hero-section-icon hero-section-icon-default"
+			<img src="<?= floria_images('/icons/flower-gray.svg') ?>" class="hero-section-icon hero-section-icon-default"
 				alt="Grass icon">
 
 			<h1 class="hero-section-title">Pěstitelský</h1>
-			<button class="hero-section-button">Zobrazit více</button>
+			<a href="/pestitelsky-program" class="hero-section-button">Zobrazit více</a>
 		</div>
 	</div>
 
 	<!-- Right -->
-	<div class="group hero-section w-full md:w-6/12 bg-cover bg-center "
+	<div class="group hero-section w-full md:w-6/12 bg-cover bg-center"
 		style="background-image: url('<?= floria_images('/hero-2.png') ?>')">
 		<div class="hero-section-overlay"></div>
 		<div class="hero-section-content scale-75 lg:scale-100">
-			<img src="<?= floria_images('/icons/flower.svg') ?>" class="hero-section-icon hero-section-icon-hover"
+			<img src="<?= floria_images('/icons/grass.svg') ?>" class="hero-section-icon hero-section-icon-hover"
 				alt="Flower icon">
-			<img src="<?= floria_images('/icons/flower-gray.svg') ?>"
+			<img src="<?= floria_images('/icons/grass-gray.svg') ?>"
 				class="hero-section-icon hero-section-icon-default" alt="Flower icon">
 			<h1 class="hero-section-title">Trávníkový</h1>
-			<button class="hero-section-button">Zobrazit více</button>
+			<a href="/travnikovy-program" class="hero-section-button">Zobrazit více</a>
 		</div>
 	</div>
 

@@ -8,7 +8,20 @@
 
 // Exit if accessed directly
 defined('ABSPATH') || exit;
-
+$months_cs = array(
+	'January' => 'Leden',
+	'February' => 'Únor',
+	'March' => 'Březen',
+	'April' => 'Duben',
+	'May' => 'Květen',
+	'June' => 'Červen',
+	'July' => 'Červenec',
+	'August' => 'Srpen',
+	'September' => 'Září',
+	'October' => 'Říjen',
+	'November' => 'Listopad',
+	'December' => 'Prosinec'
+);
 ?>
 
 
@@ -40,7 +53,7 @@ defined('ABSPATH') || exit;
 							</a>
 							<div class="text-sm mt-5">
 								<a href="/floria-radi" class="px-4 py-1 rounded-full bg-primary text-white">
-									<?php echo get_the_date('F'); ?>
+									<?= $months_cs[date('F', strtotime(get_the_date()))]; ?>
 								</a>
 							</div>
 						</div>
@@ -49,7 +62,7 @@ defined('ABSPATH') || exit;
 								<?php the_title(); ?>
 							</a>
 						</h2>
-						
+
 						<div class="article-excerpt">
 							<?php the_excerpt(); ?>
 						</div><a href="<?php the_permalink(); ?>" class="btn-line mt-10 inline-block">Zobrazit více</a>
@@ -61,6 +74,7 @@ defined('ABSPATH') || exit;
 			?>
 
 		</div>
+
 
 	</section>
 </div>

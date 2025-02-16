@@ -1,0 +1,124 @@
+/* Hlavní kontejner nastavení */
+.hero-settings {
+    padding: 24px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+/* Skupina nastavení */
+.setting-group {
+    margin-bottom: 24px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.setting-group:last-child {
+    margin-bottom: 0;
+}
+
+/* Nadpisy nastavení */
+.setting-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+/* Kontejner pro nahrávání obrázků */
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Preview obrázků */
+.preview-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.preview-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+/* Tlačítka pro nahrávání */
+.image-upload-button {
+    background: #0ea5e9 !important;
+    color: white !important;
+    border: none !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+}
+
+.image-upload-button:hover {
+    background: #0284c7 !important;
+}
+
+/* Input pro nadpis */
+.hero-title-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background: #f8fafc;
+}
+
+/* Preview sekce */
+.single-hero-preview {
+    margin-top: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.hero-preview-section {
+    position: relative;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+.hero-preview-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-preview-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero-preview-icon {
+    width: 48px;
+    height: 48px;
+    filter: brightness(0) invert(1);
+}
+
+.hero-preview-title {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
